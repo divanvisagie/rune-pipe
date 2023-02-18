@@ -8,6 +8,16 @@ logger = logging.getLogger(__name__)
 # Load the English language model in spaCy
 nlp = spacy.load('en_core_web_sm')
 
+material_map = {
+    'sten': 'stone',
+    'övrigt': 'other',
+    'puts': 'plaster',
+    'metall': 'metal',
+    'ben/horn': 'bone/horn',
+    'trä': 'wood',
+    'okänd': 'unknown',
+}
+
 
 def has_same_repeated_character(s):
     try:
