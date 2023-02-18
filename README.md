@@ -16,3 +16,10 @@ According to the rundata [documentation](http://www.rattsatt.com/rundata/mac/bsk
 |FORNSPRX |Ancient language in a searchable format|
 |RUNTEXT  |Transliterated rune text               |
 |RUNTEXTX |Runtext in a searchable format         |
+
+
+## Rundata excel file
+
+|Column name|English mapping|Description|
+|----|----|----|
+|Stilgruppering|Style Grouping| Refers to the [styles](https://en.wikipedia.org/wiki/Runestone_styles)
