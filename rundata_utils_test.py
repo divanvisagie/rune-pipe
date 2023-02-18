@@ -4,7 +4,7 @@ import logging
 import unittest
 
 from functools import partial
-from rundata_utils import extract_token_instances_from_text, has_same_repeated_character
+from rundata_utils import extract_token_instances_from_text, has_same_repeated_character, text_contains
 logger = logging.getLogger(__name__)
 
 
@@ -27,6 +27,14 @@ class TestRundataUtils(unittest.TestCase):
         pf = partial(extract_token_instances_from_text, "test")
         actual = pf("test test test")
         self.assertEqual(len(actual), 3)
+
+    def test_contains(self):
+        """ Test text_contains()"""
+        actual = text_contains("test", "thetestthis")
+        self.assertEqual(actual, True)
+        of = partial(text_contains, "test")
+        actual = of("thetestthis")
+        self.assertEqual(actual, True)
 
 
 if __name__ == '__main__':

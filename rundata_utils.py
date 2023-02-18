@@ -69,8 +69,8 @@ def create_folder_if_not_exists(folder_path):
         os.makedirs(folder_path)
 
 
-# Define a function to extract the relevant tokens
 def extract_token_instances_from_text(search_token: str, text: str) -> list[str]:
+    """Extracts all instances of a token from a text."""
     if type(text) != str:
         return []
     try:
@@ -79,6 +79,13 @@ def extract_token_instances_from_text(search_token: str, text: str) -> list[str]
     except Exception as e:
         logger.error("Error: %s" % e)
         return []
+
+
+def text_contains(search_token: str, text: str) -> bool:
+    if type(text) != str:
+        return False
+    """Checks entire string for ocurrence of substring."""
+    return text.find(search_token) != -1
 
 
 if __name__ == '__main__':
