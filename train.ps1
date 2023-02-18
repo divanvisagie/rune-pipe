@@ -1,0 +1,1 @@
+openai -k $env:OPENAI_API_KEY
