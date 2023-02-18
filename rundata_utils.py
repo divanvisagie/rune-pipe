@@ -20,8 +20,6 @@ def has_same_repeated_character(s):
 
 def get_list_of_signums(df: pd.DataFrame):
     try:
-        # xls_file = pd.read_excel('data/rundata/RUNDATA.xls')
-        # df = pd.DataFrame(xls_file)
         filtered_df = df[df['Plats'].notnull()]
         sigs = filtered_df['Signum'].values
         return sigs
@@ -94,6 +92,3 @@ if __name__ == '__main__':
     logging.basicConfig(
         format='%(asctime)s %(levelname)s %(message)s', level=logging.DEBUG)
     extract_token_instances_from_text("test", "test test test")
-    # df_en = get_table_from_text('ENGLISH')
-    # create_folder_if_not_exists(root)
-    # df_en.to_csv(f'{root}/ENGLISH.csv', index=False)
