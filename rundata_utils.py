@@ -86,6 +86,18 @@ def text_contains(search_token: str, text: str) -> bool:
     return text.find(search_token) != -1
 
 
+class FilteredFrameBuilder (object):
+    def __init__(self, df: pd.DataFrame):
+        self.df = df
+
+    def filter(self, column_name: str, filter_func) -> pd.DataFrame:
+        self.df = self.df[self.df[column_name].apply(filter_func).astype(bool)]
+        return self
+
+    def build(self) -> pd.DataFrame:
+        return self.df
+
+
 if __name__ == '__main__':
     """ set logger formating"""
     root = 'data/processed'
