@@ -20,6 +20,7 @@ According to the rundata [documentation](http://www.rattsatt.com/rundata/mac/bsk
 
 ## Rundata excel file
 
-|Column name|English mapping|Description|
-|----|----|----|
-|Stilgruppering|Style Grouping| Refers to the [styles](https://en.wikipedia.org/wiki/Runestone_styles)
+|Column name    |English mapping|Description|
+|---------------|---------------|-----------|
+|Stilgruppering |Style Grouping | Refers to the [styles](https://en.wikipedia.org/wiki/Runestone_styles) |
+|Period/Datering|Dating         | Rough dating of the enscription
