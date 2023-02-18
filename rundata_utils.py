@@ -93,7 +93,7 @@ def text_contains(search_token: str, text: str) -> bool:
     if type(text) != str:
         return False
     """Checks entire string for ocurrence of substring."""
-    return text.find(search_token) != -1
+    return text.lower().find(search_token.lower()) != -1
 
 
 class FilteredFrameBuilder (object):
