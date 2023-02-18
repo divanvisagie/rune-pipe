@@ -2,6 +2,7 @@ import logging
 import os
 import urllib.request
 import zipfile
+import pandas as pd
 
 origin_file_url = 'http://www.runforum.nordiska.uu.se/filer/srd2014.zip'
 target_file = 'data/srd2014.zip'

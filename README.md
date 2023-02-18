@@ -5,10 +5,10 @@ A python project to clean up [RUNDATA](https://www.nordiska.uu.se/forskn/samnord
 
 
 
-According to the rundata documentation, 
+According to the rundata [documentation](http://www.rattsatt.com/rundata/mac/bskr_rdm.pdf).
 
 
-|File Name|Description|
+|File Name|Description                            |
 |---------|---------------------------------------|
 |FVN      |Old west norse                         |
 |FVNX     |Old west norse in a searchable format  |
