@@ -23,8 +23,7 @@ According to the rundata [documentation](http://www.rattsatt.com/rundata/mac/bsk
 |Column name    |English mapping|Description|
 |---------------|---------------|-----------|
 |Stilgruppering |Style Grouping | Refers to the [styles](https://en.wikipedia.org/wiki/Runestone_styles) |
-|Period/Datering|Dating         | Rough dating of the enscription
-|Period/Datering |Dating|(u. = Proto-Nordic, v. = Viking Age, m. = Medieval).|
+|Period/Datering|Dating         | Rough dating of the enscription (u. = Proto-Nordic, v. = Viking Age, m. = Medieval).
 
 
 ## Understanding the Codes/Signum
