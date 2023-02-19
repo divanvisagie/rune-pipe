@@ -1,3 +1,6 @@
+from functools import partial
+
+
 medeival_map = {
     'a': 'ᛆ',
     'b': 'ᛒ',
@@ -43,7 +46,7 @@ elder_map = {
     'g': 'ᚷ',
     'h': 'ᚺ',
     'i': 'ᛁ',
-    'ï ': 'ᛇ',
+    'ï': 'ᛇ',
     'j': 'ᛃ',
     'k': 'ᚲ',
     'l': 'ᛚ',
@@ -96,8 +99,13 @@ viking_map = {
 }
 
 
-def de_transliterate_viking(text):
+def de_transliterate(rune_map: dict[str, str], text):
     for t in text:
-        if t in viking_map:
-            text = text.replace(t, viking_map[t])
+        if t in rune_map:
+            text = text.replace(t, rune_map[t])
     return text
+
+
+de_transliterate_viking = partial(de_transliterate, viking_map)
+de_transliterate_elder = partial(de_transliterate, elder_map)
+de_transliterate_medieval = partial(de_transliterate, medeival_map)
