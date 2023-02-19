@@ -1,4 +1,36 @@
-medeival_map = {}
+medeival_map = {
+    'a': 'ᛆ',
+    'b': 'ᛒ',
+    'c': 'ᛌ',
+    'd': 'ᛑ',
+    'e': 'ᛂ',
+    'f': 'ᚠ',
+    'g': 'ᚵ',
+    'G': 'ᚶ',
+    'h': 'ᚼ',
+    'i': 'ᛁ',
+    'ï ': 'ᛇ',
+    'k': 'ᚴ',
+    'l': 'ᛚ',
+    'L': 'ᛛ',
+    'm': 'ᛘ',
+    'n': 'ᚾ',
+    'N': 'ᚿ',
+    'o': 'ᚮ',
+    'ô': 'ᚯ',  # Special case for Maeshowe, Orkney
+    'p': 'ᛕ',  # in some cases this is ᛔ
+    'r': 'ᚱ',
+    'R': 'ᛦ',
+    's': 'ᛋ',  # in norwegian this is ᛌ
+    't': 'ᛏ',
+    'þ': 'ᚦ',
+    'u': 'ᚢ',
+    'v': 'ᚡ',
+    'y': 'ᚤ',  # in norwegian ᛦ
+    'Y': 'ᚤ',
+    'æ': 'ᛅ',
+    'ø': 'ᚯ',  # third horizontal line on Maeshowe, Orkney
+}
 
 elder_map = {
     'a': 'ᚨ',
