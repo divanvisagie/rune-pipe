@@ -30,7 +30,8 @@ class RuneMapTests(unittest.TestCase):
         https://www.arild-hauge.com/SRI/SRI-Oel-53-ALBOEKE-KYRKOGAARD.pdf
         """
         actual = de_transliterate_medieval(
-            "þer liker æln")  # Note that this is not the full enscription but is the best documented part`
+            "þer liker æln"  # Note that this is not the full enscription but is the best documented part
+        )
         expected = 'ᚦᛂᚱ ᛚᛁᚴᛂᚱ ᛅᛚᚾ'
         self.assertEqual(actual, expected)
 
