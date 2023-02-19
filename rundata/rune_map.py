@@ -3,7 +3,7 @@ medeival_map = {
     'b': 'ᛒ',
     'c': 'ᛌ',
     'd': 'ᛑ',
-    'ð': 'ᚧ'
+    'ð': 'ᚧ',
     'e': 'ᛂ',
     'f': 'ᚠ',
     'g': 'ᚵ',
@@ -94,3 +94,10 @@ viking_map = {
     'y': 'ᚤ',  # in norwegian ᛦ
     'Y': 'ᚤ',
 }
+
+
+def de_transliterate_viking(text):
+    for t in text:
+        if t in viking_map:
+            text = text.replace(t, viking_map[t])
+    return text
